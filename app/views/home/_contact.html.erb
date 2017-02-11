@@ -1,0 +1,37 @@
+<div class="section">
+	<section id="page3" class="fullScreen" style="margin-top:72px;">
+		<div class="col-md-12">
+			<div class="col-md-3">&nbsp;</div>
+			<div class="col-md-6">
+				<p class="contactText">We love meeting industry talents so please send us your CV or give us a call. We will be in touch to arrange a meeting to strategise your next move.</p><br/><br/><br/>
+			</div>
+			<div class="col-md-3">&nbsp;</div>
+		</div>
+		<div align="center" class="contactForm">
+			<%= simple_form_for @contact, :html => { :class => "contactForm" } do |f| %>
+		    	<%= f.input :name, label: false, :required => true, input_html: { class: 'formInput first', value: "name" }, wrapper_html: { class: 'inlineForm' } %>
+		    	<%= f.input :email, label: false, :required => true, input_html: { class: 'formInput', value: "email" }, wrapper_html: { class: 'inlineForm' } %>
+		    	<%= f.input :message, label: false, :as => :text, :required => true, input_html: { class: 'formTextArea', value: "message" }, wrapper_html: { class: 'textAreaForm' } %><br/>
+				<%= f.input :file, as: :file, label: "Upload your CV", input_html: {class: "upload" }, wrapper_html: {class: "uploadWrapper"} %>
+		    	<div class="hidden"><%= f.input :nickname, :hint => 'Leave this field blank!' %></div><br/><br/>
+		      	<%= f.button :submit, 'Send', :class => "btn btn-light" %>
+		  	<% end %>
+		</div><br/><br/>
+		<div class="col-md-12">
+			<div class="col-md-2">&nbsp;</div>
+			<div class="col-md-8 mailDetails">
+					<i class="fa fa-envelope-o fa-3x"> | <i class="fa fa-phone fa-3x"></i></i>
+					<p class="contactDeets"><br/><br/><br/><br/>
+						<strong>Sally Alekna</strong><br/>
+						sally(at)beetletv(dot)com<br/>
+						+44 7976 703739<br/><br/>
+						<strong>Lyndsay Myerscough</strong><br/>
+						lyndsay(at)beetletv(dot)com<br/>
+						+44 7973 445463
+					</p>
+				</a>
+			</div>
+			<div class="col-md-2">&nbsp;</div>
+		</div>
+	</section>
+</div>

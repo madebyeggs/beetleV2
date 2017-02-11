@@ -1,0 +1,209 @@
+// This is a manifest file that'll be compiled into application.js, which will include all the files
+// listed below.
+//
+// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, vendor/assets/javascripts,
+// or any plugin's vendor/assets/javascripts directory can be referenced here using a relative path.
+//
+// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
+// compiled file.
+//
+// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+// about supported directives.
+//
+//= require jquery
+//= require jquery_ujs
+//= require jquery-ui
+//= require jquery-ui/sortable
+//= require jquery-ui/effect-highlight
+//= require turbolinks
+//= require twitter/bootstrap/modal
+//= require update_works_row_order
+//= require mustache
+//= require retina
+//= require waypoints
+//= require parallax
+//= require jquery.mixitup
+//= require jquery.scrollTo
+//= require jquery.easing
+//= require jquery.fittext
+//= require jquery.appear
+//= require jquery.waitforimages
+//= require jquery.bxslider
+//= require jquery.fitvids
+//= require jquery.easings.min
+//= require scrolloverflow.min.js
+//= require jquery.fullPage
+//= require jquery.flexverticalcenter
+//= require main
+//= require shortcodes
+//= require particles
+//= require jquery.slicknav
+//= require_tree .
+//= require_tree ../../templates
+
+jQuery(document).ready(function() {
+	
+	jQuery(function(){
+		$('#menu').slicknav({
+			closeOnClick:true
+		});
+	});
+	//// Preloader, hide all page content until window.load
+	jQuery('.loadingGif').show();
+	
+	if ( $(window).width() >= 768 ) {
+		jQuery('#fullpage').fullpage({
+			anchors:['home', 'about', 'contact', 'work'],
+			sectionsColor : ['#000', '#fff', '#000', '#fff'],
+			//Scrolling
+	        css3: true,
+	        scrollingSpeed: 700,
+	        autoScrolling: true,
+	        fitToSection: true,
+	        fitToSectionDelay: 1000,
+	        scrollBar: false,
+	        easing: 'easeInOutCubic',
+	        easingcss3: 'ease',
+	        normalScrollElements: '',
+	        scrollOverflow: true,
+	        normalScrollElementTouchThreshold: 5,
+	        bigSectionsDestination: null,
+			onLeave: function(index, nextIndex, direction){
+				var leavingSection = $(this);
+				$('#naviMenu').fadeOut('fast');
+				$('#particles-js').fadeOut('slow', function(){
+					$('#particles-js').css({"display":"none"});
+				});
+		    },
+			afterLoad: function(anchorLink, index){
+				if(index == 1) {
+					$('.navContainer').removeClass("whiteBG");
+					$('.logo').removeClass('blackLogo');
+					$('.logo').addClass('whiteLogo');
+					$('#naviMenu a').css({"color":"#fff"});
+					$('#naviMenu').find('a').eq(1).removeClass('active');
+					$('#naviMenu').find('a').eq(2).removeClass('active');
+					$('#naviMenu').find('a').eq(3).removeClass('active');
+					$('#naviMenu').find('a').eq(0).addClass('active', function() {
+		           		$('#naviMenu').fadeIn();
+					});
+					//particlesJS.load('particles-js', '/assets/particlesjs-config.json');
+				}
+				else if(index == 2){
+					$('.navContainer').removeClass("whiteBG");
+					$('.logo').removeClass('whiteLogo');
+					$('.logo').addClass('blackLogo');
+					$('#naviMenu a').css({"color":"#000"});
+					$('#naviMenu').find('a').eq(0).removeClass('active');
+					$('#naviMenu').find('a').eq(2).removeClass('active');
+					$('#naviMenu').find('a').eq(3).removeClass('active');
+					$('#naviMenu').find('a').eq(1).addClass('active', function() {
+		           		$('#naviMenu').fadeIn();
+					});
+		       	}
+				else if(index == 3) {
+					$('.navContainer').removeClass("whiteBG");
+					$('.logo').removeClass('blackLogo');
+					$('.logo').addClass('whiteLogo');
+					$('#naviMenu a').css({"color":"#fff"});
+					$('#naviMenu').find('a').eq(0).removeClass('active');
+					$('#naviMenu').find('a').eq(1).removeClass('active');
+					$('#naviMenu').find('a').eq(3).removeClass('active');
+					$('#naviMenu').find('a').eq(2).addClass('active', function() {
+		           		$('#naviMenu').fadeIn();
+					});
+					//particlesJS.load('particles-js', '/assets/particlesjs-config.json');
+				}
+				else {
+					$('.logo').removeClass('whiteLogo');
+					$('.logo').addClass('blackLogo');
+					$('#naviMenu a').css({"color":"#000"});
+					$('.navContainer').addClass("whiteBG");
+					$('#naviMenu').find('a').eq(0).removeClass('active');
+					$('#naviMenu').find('a').eq(1).removeClass('active');
+					$('#naviMenu').find('a').eq(2).removeClass('active');
+					$('#naviMenu').find('a').eq(3).addClass('active', function() {
+		           		$('#naviMenu').fadeIn();	
+					});
+				}
+		   	},
+			afterRender: function() {
+				//// Detect click from releases view and generate correct release display
+				jQuery(".releaseClick").click(function() {
+					var id = jQuery(this).prev('.modal-object-id').val();
+					jQuery.ajax({
+						dataType: "json",
+						url: "./works/work_show_via_ajax_call",
+						data: {id: id},
+						success: function(data) {
+							$.fn.fullpage.moveTo(4);
+							var release_content = SMT['releaseshow'](data);
+							jQuery('#releaseShowWrapper').fadeIn(750);
+							jQuery('#releaseShowContent').empty().hide().append(release_content).fadeIn(750);
+						}
+					});
+				});
+				//// Close release display on icon click
+				jQuery('#removeRelease').click(function() {
+					jQuery('#releaseShowWrapper').fadeOut(500, function(){
+						jQuery("#releaseShowWrapper").hide();
+						jQuery('#portfolio-grid').show();
+					///	jQuery("#releaseShowContent").empty();
+					});
+				});
+			}
+		});
+	}
+	else {
+		jQuery('#fullpage').fullpage({
+			anchors:['home', 'about', 'contact', 'work'],
+			sectionsColor : ['#000', '#fff', '#000', '#fff'],
+			//Scrolling
+	        css3: true,
+	        scrollingSpeed: 700,
+	        autoScrolling: true,
+	        fitToSection: true,
+	        fitToSectionDelay: 1000,
+	        scrollBar: false,
+	        easing: 'easeInOutCubic',
+	        easingcss3: 'ease',
+	        normalScrollElements: '',
+	        scrollOverflow: true,
+	        normalScrollElementTouchThreshold: 5,
+	        bigSectionsDestination: null,
+			afterRender: function() {
+				//// Detect click from releases view and generate correct release display
+				jQuery(".releaseClick").click(function() {
+					var id = jQuery(this).prev('.modal-object-id').val();
+					jQuery.ajax({
+						dataType: "json",
+						url: "./works/work_show_via_ajax_call",
+						data: {id: id},
+						success: function(data) {
+							$.fn.fullpage.moveTo(4);
+							var release_content = SMT['releaseshow'](data);
+							jQuery('#releaseShowWrapper').fadeIn(750);
+							jQuery('#releaseShowContent').empty().hide().append(release_content).fadeIn(750);
+						}
+					});
+				});
+				//// Close release display on icon click
+				jQuery('#removeRelease').click(function() {
+					jQuery('#releaseShowWrapper').fadeOut(500, function(){
+						jQuery("#releaseShowWrapper").hide();
+						jQuery('#portfolio-grid').show();
+					///	jQuery("#releaseShowContent").empty();
+					});
+				});
+			}
+		});
+	}
+	
+});
+
+
+//// Load page content once it has been preloaded
+jQuery(window).load(function() {
+	jQuery('.loadingGif').hide();
+  	jQuery('.body').fadeIn(300);
+});

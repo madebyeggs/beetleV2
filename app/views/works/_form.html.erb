@@ -1,0 +1,33 @@
+<section class="parallax-bg2 parallax colored clearfix marginUp">
+	<div class="content dark padded container">
+		
+		<div class="title grid-full">
+			<h2>Add/edit your work content here</h2>
+			<span class="border"></span>
+		</div>
+
+		<div class="formWrapper">
+			<% if @work.errors.any? %>
+				<div class="message warning">
+					<% @work.errors.full_messages.each do |msg| %>
+			   			<%= msg %><br/>
+					<% end %>
+				</div>
+			<% end %>	
+			<%= form_for(@work) do |f| %>
+				<%= f.label :title, class: "formText" %><br/>
+	    		<%= f.text_field :title, class: 'email text-area' %><br /><br />
+				<%= f.label :client, class: "formText" %><br/>
+		    	<%= f.text_field :client, class: 'email text-area' %><br /><br />
+			 	<%= f.label :image, class: "formText"  %><br />
+			 	<%= f.file_field :image, class: 'email text-area file-field'  %><br /><br />
+				<%= f.label :description, class: "formText" %><br />
+	    		<%= f.text_area :description, class: 'email text-areaArea' %><br /><br />
+				<%= f.label :Vimeo_url, class: "formText" %><br />
+	    		<%= f.text_field :vimeo, class: 'email text-area' %><br /><br />
+	    		<%= f.submit %>
+			<% end %>
+		</div>
+
+		
+</section>

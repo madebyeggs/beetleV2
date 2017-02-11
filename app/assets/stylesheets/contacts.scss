@@ -1,0 +1,63 @@
+// Place all the styles related to the contacts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.hidden { display: none; }
+.alert-error {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-alert {
+background-color: #f2dede;
+border-color: #eed3d7;
+color: #b94a48;
+text-align: left;
+}
+
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+
+.alert-notice {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #468847;
+text-align: left;
+}
+.contactForm {margin-top:-36px;}
+.form {
+  	div.input {
+    	margin-bottom:10px;
+    	clear:both;
+		width:250px;
+  	}
+  	label {
+    	display:block;
+    	text-align:center;
+    	margin:12px 10px;
+  	}
+}
+.formInput, .formTextArea {
+	background-color:#e5e5e5;
+	padding:3px 6px;
+	margin:3px 0px;
+	width:197px;
+	height:36px;
+	font-family:"Gotham-Medium";
+}
+.first {margin-right:6px;}
+.formTextArea {width:403px;height:124px;margin-top:6px;}
+.inlineForm {display:inline;}
+.btn {z-index:999999;font-family:"Gotham-Medium";height:54px;width:78px;}
+@media (max-width: 497px) {
+	.formInput, .formTextArea {width:157px;}
+	.formTextArea {width:323px;}
+}
+.upload, .uploadWrapper {color:white;font-family:"Gotham-Medium";text-transform:capitalize;}
