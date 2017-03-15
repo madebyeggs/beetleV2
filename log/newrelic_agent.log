@@ -5347,3 +5347,221 @@
 [2017-02-11 14:36:12 +0000 administorsMBP2.domain_not_set.invalid (21259)] INFO : Finished instrumentation
 [2017-02-11 14:36:13 +0000 administorsMBP2.domain_not_set.invalid (21259)] INFO : Doing deferred dependency-detection before Rack startup
 [2017-02-11 14:36:14 +0000 administorsMBP2.domain_not_set.invalid (21259)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1386933/applications/20595735
+[2017-02-11 16:14:46 +0000 administorsMBP2.domain_not_set.invalid (21259)] INFO : Starting Agent shutdown
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Starting the New Relic agent in "development" environment.
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Reading configuration from config/newrelic.yml (/Volumes/Other/MadeByEggs/Clients/BeetleTV/V2)
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : New Relic Agent Developer Mode enabled.
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Environment: development
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Dispatcher: webrick
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Application: My Application (Development)
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing ActiveJob instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing ActiveRecord 4+ instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing Net instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing deferred Rack::Builder instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing Rack::Builder middleware instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing Rails 3+ middleware instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing Rails 4 Controller instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing Rails 4 view instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Installing Rails 4 Error instrumentation
+[2017-03-15 13:58:00 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Finished instrumentation
+[2017-03-15 13:58:01 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Doing deferred dependency-detection before Rack startup
+[2017-03-15 13:59:01 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-03-15 13:59:01 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (No route to host - connect(2) for "collector.newrelic.com" port 443)
+[2017-03-15 13:59:01 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Will re-attempt in 60 seconds
+[2017-03-15 14:01:22 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-03-15 14:01:22 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (Network is unreachable - connect(2) for "collector.newrelic.com" port 443)
+[2017-03-15 14:01:22 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Will re-attempt in 120 seconds
+[2017-03-15 14:03:25 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-03-15 14:03:25 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-03-15 14:03:25 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Will re-attempt in 180 seconds
+[2017-03-15 14:06:27 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-03-15 14:06:27 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-03-15 14:06:27 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Will re-attempt in 240 seconds
+[2017-03-15 14:10:27 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : Error establishing connection with New Relic Service at collector.newrelic.com:443:
+[2017-03-15 14:10:27 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error talking to collector.newrelic.com:443 after 2 attempts: Failed to open TCP connection to collector.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-03-15 14:10:27 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Will re-attempt in 300 seconds
+[2017-03-15 14:25:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Reporting to: https://rpm.newrelic.com/accounts/1386933/applications/20595735
+[2017-03-15 14:27:17 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-03-15 14:27:17 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-200.newrelic.com:443 after 30.076183 seconds: Failed to open TCP connection to collector-200.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-03-15 14:27:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : 1 error(s) running task for event 'report_event_data' in Agent Event Loop:
+[2017-03-15 14:27:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-200.newrelic.com:443 after 30.074677 seconds: Failed to open TCP connection to collector-200.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-03-15 14:28:17 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : 1 error(s) running task for event 'report_data' in Agent Event Loop:
+[2017-03-15 14:28:17 +0000 administorsMBP2.domain_not_set.invalid (22583)] ERROR : NewRelic::Agent::ServerConnectionException: Recoverable error connecting to collector-200.newrelic.com:443 after 30.073138 seconds: Failed to open TCP connection to collector-200.newrelic.com:443 (getaddrinfo: nodename nor servname provided, or not known)
+[2017-03-15 14:28:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:28:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:28:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:28:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:29:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:29:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:29:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:29:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:30:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:30:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:30:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:30:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:31:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:31:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:31:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:31:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:32:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:32:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:32:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:32:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:33:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:33:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:33:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:33:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:34:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:34:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:34:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:34:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:35:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:35:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:35:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:35:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:36:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:36:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:36:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:36:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:37:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:37:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:37:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:37:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:38:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:38:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:38:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:38:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:39:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:39:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:39:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:39:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:40:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:40:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:40:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:40:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:41:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:41:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:41:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:41:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:42:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:42:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:42:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:42:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:43:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:43:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:43:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:43:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:44:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:44:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:44:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:44:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:45:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:45:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:45:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:45:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:46:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:46:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:46:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:46:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:47:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:47:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:47:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:47:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:48:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:48:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:48:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:48:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:49:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:49:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:49:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:49:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:50:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:50:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:50:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:50:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:51:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:51:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:51:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:51:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:52:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:52:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:52:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:52:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:53:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:53:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:53:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:53:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:54:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:54:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:54:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:54:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:55:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:55:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:55:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:55:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:56:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:56:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:56:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:56:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:57:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:57:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:57:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:57:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:58:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:58:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:58:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:58:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:59:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 14:59:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 14:59:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 14:59:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:00:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:00:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:00:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:00:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:01:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:01:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:01:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:01:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:02:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:02:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:02:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:02:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:03:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:03:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:03:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:03:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:04:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:04:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:04:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:04:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:05:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:05:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:05:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:05:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:06:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:06:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:06:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:06:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:07:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:07:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:07:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:07:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:08:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:08:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:08:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:08:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:09:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:09:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:09:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:09:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:10:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:10:47 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:10:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:10:48 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:10:49 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Starting Agent shutdown
+[2017-03-15 15:10:49 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send metric_data data, will try again later. Error: 
+[2017-03-15 15:10:49 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
+[2017-03-15 15:10:50 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : Unable to send analytic_event_data data, will try again later. Error: 
+[2017-03-15 15:10:50 +0000 administorsMBP2.domain_not_set.invalid (22583)] INFO : NewRelic::Agent::LicenseException: Invalid license key, please visit support.newrelic.com
